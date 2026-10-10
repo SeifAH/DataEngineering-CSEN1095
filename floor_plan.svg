@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 490 560" width="800" height="900">
+  <!-- Definitions for patterns/gradients -->
+  <defs>
+    <pattern id="wood" patternUnits="userSpaceOnUse" width="10" height="10">
+      <rect width="10" height="10" fill="#D4A373"/>
+      <path d="M0,5 l10,0" stroke="#C89666" stroke-width="1"/>
+    </pattern>
+    <pattern id="rug" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#F4EDDE"/>
+      <path d="M0,0 l20,20 M20,0 l-20,20" stroke="#E76F51" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Room Background -->
+  <rect x="0" y="0" width="450" height="500" fill="#FCF9F2" stroke="#333333" stroke-width="6"/>
+
+  <!-- Balcony Door (Top Left, Opens Inward) -->
+  <rect x="10" y="-3" width="90" height="6" fill="#FCF9F2"/>
+  <path d="M 100 0 L 100 90 A 90 90 0 0 1 10 0 Z" fill="#E8E8E8" opacity="0.6"/>
+  <line x1="100" y1="0" x2="100" y2="90" stroke="#555" stroke-width="4"/>
+  <text x="30" y="-10" font-family="Arial" font-size="12" fill="#555">Balcony Door</text>
+
+  <!-- Window (Top Right) -->
+  <rect x="150" y="-3" width="250" height="6" fill="#87CEEB" stroke="#333" stroke-width="2"/>
+  <text x="250" y="-10" font-family="Arial" font-size="12" fill="#555">Window / Natural Light</text>
+
+  <!-- Main Door (Bottom Left, Opens Inward) -->
+  <rect x="10" y="497" width="90" height="6" fill="#FCF9F2"/>
+  <path d="M 10 500 L 10 410 A 90 90 0 0 1 100 500 Z" fill="#E8E8E8" opacity="0.6"/>
+  <line x1="10" y1="500" x2="10" y2="410" stroke="#555" stroke-width="4"/>
+  <text x="30" y="525" font-family="Arial" font-size="12" fill="#555">Main Door</text>
+
+  <!-- SLEEP ZONE -->
+  <!-- Bed (120x200cm -> 120x200px) -->
+  <g transform="translate(330, 250)">
+    <rect x="0" y="0" width="120" height="200" fill="url(#wood)" rx="4" ry="4" stroke="#8B5A2B" stroke-width="2"/>
+    <!-- Duvet -->
+    <rect x="5" y="40" width="110" height="155" fill="#FAEDCD" rx="4" ry="4"/>
+    <!-- Pillows -->
+    <rect x="15" y="10" width="40" height="25" fill="#E9C46A" rx="3" ry="3"/>
+    <rect x="65" y="10" width="40" height="25" fill="#E9C46A" rx="3" ry="3"/>
+    <text x="60" y="120" font-family="Arial" font-size="14" fill="#666" text-anchor="middle" transform="rotate(-90, 60, 120)">Bed (120x200)</text>
+  </g>
+
+  <!-- Storage: Wardrobe (120x60cm -> 120x60px) -->
+  <g transform="translate(190, 440)">
+    <rect x="0" y="0" width="120" height="60" fill="#D2B48C" stroke="#A0522D" stroke-width="2"/>
+    <line x1="60" y1="0" x2="60" y2="60" stroke="#A0522D" stroke-width="1"/>
+    <text x="60" y="35" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Wardrobe</text>
+  </g>
+
+  <!-- Storage: Small Dresser -->
+  <g transform="translate(350, 460)">
+    <rect x="0" y="0" width="80" height="40" fill="url(#wood)" stroke="#8B5A2B" stroke-width="2"/>
+    <text x="40" y="25" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Dresser</text>
+  </g>
+
+  <!-- LIVING ZONE -->
+  <!-- Rug -->
+  <rect x="25" y="180" width="210" height="160" fill="url(#rug)" rx="5" ry="5"/>
+
+  <!-- TV Console -->
+  <g transform="translate(0, 200)">
+    <rect x="0" y="0" width="30" height="120" fill="url(#wood)" stroke="#8B5A2B" stroke-width="2"/>
+    <rect x="5" y="20" width="10" height="80" fill="#333" rx="2" ry="2"/>
+    <text x="45" y="65" font-family="Arial" font-size="12" fill="#555" transform="rotate(-90, 45, 65)">TV &amp; Media</text>
+  </g>
+
+  <!-- Sofa (2-Seater) -->
+  <g transform="translate(150, 200)">
+    <rect x="0" y="0" width="70" height="140" fill="#E76F51" rx="8" ry="8" stroke="#D05030" stroke-width="2"/>
+    <rect x="0" y="10" width="50" height="60" fill="#F4A261" rx="4" ry="4"/>
+    <rect x="0" y="70" width="50" height="60" fill="#F4A261" rx="4" ry="4"/>
+    <text x="35" y="70" font-family="Arial" font-size="14" fill="#FFF" text-anchor="middle" transform="rotate(-90, 35, 70)">Cozy Sofa</text>
+  </g>
+
+  <!-- Coffee Table -->
+  <circle cx="90" cy="270" r="25" fill="url(#wood)" stroke="#8B5A2B" stroke-width="2"/>
+
+  <!-- WORK ZONE -->
+  <!-- Desk (160x70cm -> 160x70px) -->
+  <g transform="translate(250, 6)">
+    <rect x="0" y="0" width="160" height="70" fill="url(#wood)" stroke="#8B5A2B" stroke-width="2"/>
+    <!-- Monitors -->
+    <rect x="20" y="5" width="50" height="10" fill="#444" rx="1" ry="1"/>
+    <rect x="80" y="5" width="50" height="10" fill="#444" rx="1" ry="1"/>
+    <!-- Laptop -->
+    <rect x="50" y="30" width="30" height="20" fill="#CCC" rx="2" ry="2"/>
+    <text x="80" y="55" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Desk (Dual Monitor)</text>
+  </g>
+
+  <!-- Office Chair -->
+  <g transform="translate(330, 95)">
+    <circle cx="0" cy="0" r="20" fill="#888"/>
+    <rect x="-15" y="-15" width="30" height="10" fill="#333" rx="3" ry="3"/>
+  </g>
+
+  <!-- PLANTS / DECOR -->
+  <!-- Plant 1 (Corner near window) -->
+  <g transform="translate(425, 25)">
+    <circle cx="0" cy="0" r="15" fill="#2A9D8F" opacity="0.8"/>
+    <circle cx="-5" cy="5" r="12" fill="#264653" opacity="0.9"/>
+    <circle cx="5" cy="2" r="14" fill="#2A9D8F" opacity="0.7"/>
+  </g>
+
+  <!-- Plant 2 (Near living area) -->
+  <g transform="translate(30, 150)">
+    <circle cx="0" cy="0" r="12" fill="#2A9D8F" opacity="0.8"/>
+    <circle cx="-2" cy="-4" r="10" fill="#264653" opacity="0.9"/>
+  </g>
+
+  <!-- Walkway / Flow Arrow -->
+  <path d="M 60 400 C 60 300, 60 150, 60 100" fill="none" stroke="#A8DADC" stroke-width="4" stroke-dasharray="8,8"/>
+  <polygon points="60,90 55,105 65,105" fill="#A8DADC"/>
+  <text x="70" y="360" font-family="Arial" font-size="14" font-weight="bold" fill="#457B9D" transform="rotate(-90, 70, 360)">Clear Path to Balcony</text>
+
+</svg>
